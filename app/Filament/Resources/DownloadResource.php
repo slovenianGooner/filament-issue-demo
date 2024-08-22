@@ -29,6 +29,7 @@ class DownloadResource extends Resource
                     ->required(),
                 Forms\Components\SpatieMediaLibraryFileUpload::make('pdf')
                     ->label('PDF')
+                    ->collection('pdf')
                     ->required(),
             ]);
     }
